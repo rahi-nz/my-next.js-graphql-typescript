@@ -12,5 +12,6 @@ export const Element = styled.section`
   display: flex;
   flex-wrap: wrap;
   margin: auto;
+  justify-content: center;
   padding: 20px;
 `;

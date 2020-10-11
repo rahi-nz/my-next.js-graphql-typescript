@@ -4,6 +4,7 @@ import { gql } from "apollo-boost";
 import Page from "../../components/Page";
 import ErrorPage from "../../components/error";
 import Loading from "../../components/loading";
+import SingleRecipe from "../../components/recipe";
 
 interface Props {
   query: { id: string };
@@ -35,7 +36,6 @@ const Recipe = ({ query }: Props) => {
   const { loading, data, error } = useQuery(RECIPE, {
     variables: { id },
   });
-  console.log("data", data);
 
   if (error) {
     return <ErrorPage />;
@@ -46,8 +46,8 @@ const Recipe = ({ query }: Props) => {
   }
 
   return (
-    <Page title="This is HomePage" header="welcome to my recipe">
-      <p>recipe</p>
+    <Page title="This is recipe page" header="Details View">
+      <SingleRecipe data={data} />
     </Page>
   );
 };

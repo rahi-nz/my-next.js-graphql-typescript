@@ -35,7 +35,7 @@ const Index = () => {
   }
 
   return (
-    <Page title="This is HomePage" header="Our weekly menu">
+    <Page title="This is HomePage" header="List view">
       {data.recipeCollection.items?.map((el) => (
         <Recipes
           key={el.title}
