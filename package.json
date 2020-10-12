@@ -19,7 +19,10 @@
   "scripts": {
     "dev": "next -p 3030",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "check-types": "tsc --noemit",
+    "eslint": "eslint",
+    "lint": "npm run eslint && npm run check-types"
   },
   "devDependencies": {
     "@types/node": "^14.11.8",
