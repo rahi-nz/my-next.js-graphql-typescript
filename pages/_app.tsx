@@ -15,7 +15,7 @@ export interface IThemeWrapper {
 }
 
 export const theme: ITheme = {
-  light: "#f1f3f4",
+  light: "#58abd6",
 };
 
 const GlobalStyle = createGlobalStyle<IThemeWrapper>`

@@ -35,7 +35,7 @@ export default class MyDocument extends Document<any> {
 
   render() {
     return (
-      <html>
+      <Html>
         <Head>
           {this.props.styleTags /* rendering the actually stylesheet */}
         </Head>
@@ -43,7 +43,7 @@ export default class MyDocument extends Document<any> {
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }
