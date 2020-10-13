@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Recipes/> Should render correctly 1`] = `
+<div
+  className="style__Container-qet6cn-0 bNEakZ"
+>
+  <a
+    href="/recipe/4dT8tcb6ukGSIg2YyuGEOm"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    <img
+      alt="title"
+      className="style__Photo-qet6cn-2 gzrVNn"
+      src="https://images.ctfassets.net/kk2bw5ojx476/61XHcqOBFYAYCGsKugoMYK/0009ec560684b37f7f7abadd66680179/SKU1240_hero-374f8cece3c71f5fcdc939039e00fb96.jpg"
+    />
+    <p
+      className="style__Title-qet6cn-1 gFNjlY"
+    >
+      White Cheddar Grilled Cheese with Cherry Preserves & Basil
+    </p>
+  </a>
+</div>
+`;

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Error/> Should render correctly 1`] = `
+<div
+  className="style__Container-sc-1j36exu-0 dQGOOK"
+>
+  <img
+    alt="myApp"
+    className="style__LoadingImg-sc-1j36exu-1 gZMMXC"
+    src="/error.gif"
+  />
+  <p>
+    something went wrong. Try again in a few minutes
+  </p>
+</div>
+`;
