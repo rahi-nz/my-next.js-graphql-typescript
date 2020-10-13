@@ -1,14 +1,9 @@
 import Head from "next/head";
-import React, { ReactNode } from "react";
+import React from "react";
+import { Props } from "./type";
 import { Container, Element } from "./style";
 
-interface PropTypes {
-  children: ReactNode;
-  title: string;
-  header: string;
-}
-
-export default function Page({ children, title, header }: PropTypes) {
+const Page = ({ children, title, header }: Props) => {
   return (
     <Container>
       <Head>
@@ -22,4 +17,6 @@ export default function Page({ children, title, header }: PropTypes) {
       <Element>{children}</Element>
     </Container>
   );
-}
+};
+
+export default Page;
