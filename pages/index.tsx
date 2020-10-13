@@ -1,30 +1,13 @@
 import React from "react";
 import { useQuery } from "@apollo/react-hooks";
-import { gql } from "apollo-boost";
+import { RECIPES, recipesData } from "./type";
 import Page from "../components/Page";
 import Recipes from "../components/recipes";
 import ErrorPage from "../components/error";
 import Loading from "../components/loading";
 
 const Index = () => {
-  const RECIPES = gql`
-    query {
-      recipeCollection {
-        items {
-          sys {
-            id
-          }
-          title
-          photo {
-            url
-          }
-        }
-      }
-    }
-  `;
-
-  const { loading, data, error } = useQuery(RECIPES);
-  console.log("data", data);
+  const { loading, data, error } = useQuery<recipesData>(RECIPES);
 
   if (error) {
     return <ErrorPage />;

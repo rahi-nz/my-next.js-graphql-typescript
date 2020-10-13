@@ -14,7 +14,9 @@ export const Container = styled.div`
   }
 `;
 
-export const TagContainer = styled.div`
+export const TagContainer = styled.div.attrs(() => ({
+  "data-test-id": "TagContainer",
+}))`
   display: flex;
   flex-wrap: wrap;
   width: 100%;

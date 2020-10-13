@@ -9,6 +9,11 @@ yarn install
 yarn dev
 open http://localhost:3030
 ```
+# Run test
+
+```bash
+yarn test
+```
 
 # check type
 
@@ -20,6 +25,7 @@ yarn check-types
 
 - Next.js 
 - TypeScript
+- jest
 - GraphQL and Apollo Client
 - Styled Components 
 - ESLint
