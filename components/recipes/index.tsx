@@ -1,14 +1,9 @@
 import React from "react";
 import Link from "next/link";
+import { Props } from "./type";
 import { Container, Photo, Title } from "./style";
 
-interface PropTypes {
-  photo: string;
-  title: string;
-  id: string;
-}
-
-const Recipes = ({ photo, title, id }: PropTypes) => {
+const Recipes = ({ photo, title, id }: Props) => {
   return (
     <Container>
       <Link href={`/recipe/${id}`}>
