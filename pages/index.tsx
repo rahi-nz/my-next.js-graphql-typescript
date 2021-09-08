@@ -1,6 +1,6 @@
 import React from "react";
 import { useQuery } from "@apollo/react-hooks";
-import { RECIPES, recipesData } from "./type";
+import { RECIPES, recipesData } from "../type/type";
 import Page from "../components/Page";
 import Recipes from "../components/recipes";
 import ErrorPage from "../components/error";
